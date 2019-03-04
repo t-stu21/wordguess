@@ -3,46 +3,82 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Hangman Game</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
     </head>
     <body>
-        
-        <div class="container">
+     
+        <div class="jumbotron-fluid background py-5">
+         <div class="container py-5">
+          <div class="row align-items-center">
+           <div class="col-12 col-md-8 ny-3">
+               <div class="embed-responsive embed-responsive-16by9">
+                    <iframe  src="https://www.youtube.com/embed/m193J1vAk1c" allowfullscreen></iframe>
+               </div>
+            </div>
+           <div class="col-12 col-md-4 ny-3">
+               <h1 id="space-hangman">Space Hangman</h1>
+               <button id="new-game-button">
+                    <i class="fas fa-gamepad"></i>
+                    Start a New Game
 
-            <div class="hangmangame">
+               </button>
+           </div>
+        </div>
+      </div>
+    </div>
+       <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 text-center py-5" id="placeholder-section">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-12 col-md-6 ny-3">
+                          <h2>Fill these in!
+                              <br/>
+                              <span id="placeholders">____ _____ __</span>
+                          </h2>
+                      </div>
+                            <div class="col-12 col-md-6 ny-3">
+                                    <h2>Incorrect Letters Guess
+                                            <br/>
+                                            <span id="guessed-letters"></span>
+                                        </h2>
 
-                    <div class="top"><p id="header">Space Hangman Game</p></div>
+     
+                            </div>
 
+                      
+                  </div>
+              </div>
+          </div>
 
-                    <img src="assets/images/spacepicture.jpg" alt="spacepicture">
-
-
-                    <div class="centered">
-
-                            <span id="wordGuess"></span>
-
-      <h1 id="choose">Choose a letter</h1>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 text-center py-5">
+                <h3>Guesses Left: <span id="guesses-left"></span>
+                </h3>
+            </div>
+            <div class="col-12 col-md-4 text-center py-5">
+                    <h3>Wins: <span id="wins"></span>
+                    </h3>
+                </div>
+                <div class="col-12 col-md-4 text-center py-5">
+                        <h3>Losses: <span id="losses"></span>
+                        </h3>
+                    </div>
+        </div>
+    </div>
 
       
 
 
-                    </div>
-
-        
-
-
-
-
-        </div>
-        
-    </div>
+                
         
         <script src="assets/javascript/javascript.js" async defer></script>
     </body>
